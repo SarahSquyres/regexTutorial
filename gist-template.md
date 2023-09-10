@@ -20,7 +20,7 @@ In order to better understand regex and it's components, we will be dissecting t
 
 `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
 
-
+This regular expression is used to verify if a given string is valid a URL.
 
 ## Table of Contents
 
@@ -40,7 +40,15 @@ In order to better understand regex and it's components, we will be dissecting t
 
 ### Anchors
 
+The anchors for our expression are `^` and `$`, and are placed at the beginning and end of the expression. Everything between these two symbols will be validated.
+
+It is important to note that regex is case sensitive when you are formulating your expression.
+
 ### Quantifiers
+
+Our expression also contains a quantifier `?`.
+
+Quantifiers are used to 
 
 ### OR Operator
 
