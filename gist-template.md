@@ -1,6 +1,6 @@
 # Regex Tutorial: Matching URL
 
-Regular expressions, or regex, are useful for dynamic string searches.  Where methods and if statements fall short, regex can get the job done.
+Regular expressions, or regex, are useful for dynamic string searches.  Where methods and IF statements fall short, regex can get the job done.
 
 For instance, if we need to match a username, a regex such as this may come in handy:
 
@@ -20,7 +20,15 @@ In order to better understand regex and it's components, we will be dissecting t
 
 `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
 
-This regular expression is used to verify if a given string is valid a URL.
+This regular expression is used to verify if a given string is valid a URL.  The overall functionality of the regex is as follows:
+
+- `^` indicates the beginning of the string
+- `(https?:\/\/)?` states the URL protocol can either be `http://` or `https://` and the `?` allows the protocol to be optional
+- `([\da-z\.-]+)` looks for the domain name and states it can contain alphanumeric characters, `.` and `-`
+- `\.([a-z\.]{2,6})` is the ".com" or ".org" portion of the URL and can contain lowercase letters and `.` as long as the characters are between two and six characters in length
+- `([\/\w \.-]*)*` allows `/`, alphanumeric characters, `.` and `-` zero or more times
+- `\/?` makes the trailing `/` optional
+- `$` indicates the end of the string
 
 ## Table of Contents
 
@@ -31,7 +39,6 @@ This regular expression is used to verify if a given string is valid a URL.
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -81,9 +88,13 @@ Quantifiers are greedy by nature, the goal being to match as many patterns as po
 
 
 ## Author
-
 Hi! My name is Sarah. I am a full-stack developer. Thanks for reading my tutorial!
 
-GitHub Profile:
+GitHub Profile: https://github.com/SarahSquyres 
 
-https://github.com/SarahSquyres 
+## Credits
+Xpert Learning Assistant
+
+https://bard.google.com/ 
+
+https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial 
