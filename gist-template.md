@@ -89,12 +89,12 @@ Bracket expressions are a type of character class. We discussed the use of `[]` 
 Quantifiers are greedy by nature, the goal being to match as many patterns as possible.  In contrast, lazy quantifiers match the fewest characters possible. To make a quantifier lazy, add the `?` afterward. 
 
 
-## Author
+### Author
 Hi! My name is Sarah. I am a full-stack developer. Thanks for reading my tutorial!
 
 GitHub Profile: https://github.com/SarahSquyres 
 
-## Credits
+### Credits
 Xpert Learning Assistant
 
 https://bard.google.com/ 
