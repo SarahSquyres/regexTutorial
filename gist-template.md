@@ -39,6 +39,8 @@ This regular expression is used to verify if a given string is valid a URL.  The
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
+- [Author](#author)
+- [Credits](#credits)
 
 ## Regex Components
 
@@ -54,15 +56,15 @@ For our purposes, the `?` is used to "match the pattern either zero or one time.
 
 
 ### OR Operator
-We have several `\` (OR Operators) in our code. 
+We have several `\` (OR operators) in our code. 
 
-With OR Operators, the pattern on either the left or the right can return a match.  This is illustrated in our code, `[a-z\.]` means any lowercase letter or a `.` will match.
+With OR operators, the pattern on either the left or the right can return a match.  This is illustrated in our code, `[a-z\.]` means any lowercase letter or a `.` will match.
 
 
 ### Character Classes
 Character classes are enclosed in `[]` and are used to define a set of characters that can be matched.
 
-Our expression uses character classes throughout. For example, in the pattern `[\da-z\.-]`, the character class matches any alphanumeric character OR a `.` or `-`.  Character classes are used again in the pattern `[a-z\.]` matches any lowercase letter or `.`(dot). Finally, the pattern `[\/\w \.-]` matches any combination of `/`, word character, `.` or `-`.
+Our expression uses character classes throughout. For example, in the pattern `[\da-z\.-]`, the character class matches any alphanumeric character OR a `.` or `-`.  Character classes are used again in the pattern `[a-z\.]` matches any lowercase letter or `.`. Finally, the pattern `[\/\w \.-]` matches any combination of `/`, word character, `.` or `-`.
 
 
 ### Grouping and Capturing
