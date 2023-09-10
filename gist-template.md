@@ -1,10 +1,26 @@
-# Regex Tutorial
+# Regex Tutorial: Matching URL
 
-Introductory paragraph (replace this with your text)
+Regular expressions, or regex, are useful for dynamic string searches.  Where methods and if statements fall short, regex can get the job done.
+
+For instance, if we need to match a username, a regex such as this may come in handy:
+
+`/^[a-z0-9_-]{3,16}$/`
+
+The above regex checks to see if a string fulfills the requirements for a basic username.  The string can:
+* have lowercase letters between a-z
+* be any number between 0-9
+* contain an underscore or hyphen
+* and be between 3-16 characters long
+
+Now that you have a general understanding of the purpose of regex, let's take a deeper look into the different components.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In order to better understand regex and it's components, we will be dissecting the following expression:
+
+`/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
+
+
 
 ## Table of Contents
 
